@@ -47,3 +47,21 @@ From Git version 2.23 onwards you can use `git switch` instead of `git checkout`
     - Switch to an existing branch: `git switch testing-branch`.
     - Create a new branch and switch to it: `git switch -c new-branch`. The `-c` flag stands for create, you can also use the full flag: `--create`.  
     - Return to your previously checked out branch: `git switch -`.
+
+
+- Renaming branches
+
+Suppose you have a branch that is called `bad-branch-name` and you want to change it to `corrected-branch-name`, while keeping all history. You also want to change the branch name on the remote (GitHub, GitLab, other server). How do you do this? Rename the branch locally with the `git branch --move` command:
+```
+git branch --move bad-branch-name corrected-branch-name
+```
+
+This replaces your `bad-branch-name` with `corrected-branch-name`, but this change is only local for now. To let others see the corrected branch on the remote, push it:
+
+```
+git push --set-upstream origin corrected-branch-name
+```
+To delete the old branch name:
+```
+git push origin --delete bad-branch-name
+```
