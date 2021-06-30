@@ -18,3 +18,11 @@ The --author option allows you to filter on a specific author
 ```
 git log --author="Asocia"
 ```
+
+- Getting the logs for a specific string 
+
+
+Another really helpful filter is the -S option (colloquially referred to as Git’s “pickaxe” option), which takes a string and shows only those commits that changed the number of occurrences of that string. For instance, if you wanted to find the last commit that added or removed a reference to a specific function, you could call:
+```
+git log -S function_name
+```
