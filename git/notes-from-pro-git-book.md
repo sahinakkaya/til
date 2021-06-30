@@ -26,3 +26,18 @@ Another really helpful filter is the -S option (colloquially referred to as Git�
 ```
 git log -S function_name
 ```
+
+
+- Adding remotes and fetching them
+
+
+We’ve mentioned and given some demonstrations of how the git clone command implicitly adds the origin remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run git remote add <shortname> <url>:
+
+```
+$ git remote -v
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+$ git fetch pb
+```
+Paul’s master branch is now accessible locally as pb/master — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it.
+
