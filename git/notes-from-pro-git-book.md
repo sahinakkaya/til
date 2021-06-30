@@ -41,3 +41,9 @@ $ git fetch pb
 ```
 Paul’s master branch is now accessible locally as pb/master — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it.
 
+- Using git switch to create and checkout branches
+
+From Git version 2.23 onwards you can use `git switch` instead of `git checkout` to:
+    - Switch to an existing branch: `git switch testing-branch`.
+    - Create a new branch and switch to it: `git switch -c new-branch`. The `-c` flag stands for create, you can also use the full flag: `--create`.  
+    - Return to your previously checked out branch: `git switch -`.
