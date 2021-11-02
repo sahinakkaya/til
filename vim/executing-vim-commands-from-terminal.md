@@ -1,15 +1,12 @@
-You can execute vim commands in terminal by prefixing your command with `+` symbol:
+You can execute vim commands in terminal by prefixing your commands with `+` symbol:
 
 ```
 vim filename +/searchterm
 vim +PlugInstall
 vim filename +g/foo/d
 vim filename "+g/foo/norm dap"
+vim filename "+g/test/norm dap" +wq
 ```
 
-These commands will open vim and perform your command. And if you want to immediately save and exit (useful for shell scripts):
-```
-ex "+g/test/norm dap" "+wq" filename
-```
 
 
