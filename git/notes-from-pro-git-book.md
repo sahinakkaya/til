@@ -65,3 +65,10 @@ To delete the old branch name:
 ```
 git push origin --delete bad-branch-name
 ```
+
+- Pushing a local branch into a remote branch that is named differently
+
+```
+# our branch is serverfix and we don't want to push it with this name
+git push origin serverfix:awesomebranch
+```
