@@ -14,8 +14,7 @@ I used three resources to create my own layout. Here are the links: [one](https:
 - If you want to create a variant instead of a new layout, just modify the original layout and put your variant there. For example, I want to create a new variant for us layout so I modified this file: `/usr/share/X11/xkb/symbols/us`
 - If a variant has default keyword, it is the default variant for that layout. I didn't try this yet but it might be useful in the future.
 - A key generate up to 4 different symbols in a usual scenario: normal, Shifted, AltGr'ed, AltGr+Shift'ed. Here is how is my c key configured: c, C, ccedilla, Ccedilla.
-- In order to make AltGr work as intended, you need to `include "latin"` and `include "level3(ralt_switch)"` at the start of your variant. I don't know what "include latin" does, I copied it from the Turkish layout which has AltGr working as AltGr and not the RAlt key.
-    
+- In order to make AltGr work as intended, you need to `include "level3(ralt_switch)"` at the start of your variant.
 - You can make any key to act as if Shift being pressed when Caps Lock is active. What do I mean? Suppose you are writing an `UPPERCASE_CONSTANT` in some programming language. In normal scenario, you can either hold Shift and type everything or press caps lock and type until `_` character and type it using Shift and continue with the rest. Have you ever thought why alphabet characters becomes shifted but not the symbols when caps lock is on? What if you just press `-` and it would be a `_` if the caps lock is active? `type[Group1] = "FOUR_LEVEL_ALPHABETIC"` add this to key definition? and you will be good to go.
 - When you are done configuring your layout, add it to `/usr/share/X11/xkb/rules/xfree86.lst` so that you can use `setxkbmap` to select your layout/variant.
 - You also need to add it to `/usr/share/X11/xkb/rules/evdev.xml`, otherwise `localectl` utility won't be able to find your layout.
