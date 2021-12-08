@@ -1,6 +1,6 @@
 You have a commit which contains a good code change but it is in another branch?
 
-```
+```bash
 # pick the commit 
 git cherry-pick <sha>
 

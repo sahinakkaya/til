@@ -4,7 +4,7 @@ Here is how it should be done:
 
 If you want to remap it for X server, add the following line to your `~/.xsession` or `~/.xinitrc`. Make sure to add it before `exec whatever_window_manager` you are using:
 
-```
+```bash
 setxkbmap -option 'caps:ctrl_modifier'
 ```
 [source](https://superuser.com/questions/566871/how-to-map-the-caps-lock-key-to-escape-key-in-arch-linux)

@@ -1,6 +1,6 @@
 The global command `:g[lobal]` is very powerful. It is used to execute a command matching a pattern. The syntax is 
 
-```
+```vim
 :[range]g/pattern/cmd
 ```
 

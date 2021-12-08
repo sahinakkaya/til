@@ -1,9 +1,9 @@
 If you have an existing repository and want to add a new remote you can use this command:
-```
+```bash
 git remote add <name> <url>
 ```
 Example:
-```
+```bash
 git remote add origin git@github.com:Asocia/til.git
 git push -u origin my_branch
 ```

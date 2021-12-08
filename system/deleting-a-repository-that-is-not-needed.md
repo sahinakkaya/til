@@ -7,7 +7,7 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 
 You will need to find corresponding file in `sources.list.d` and delete it.
 
-```
+```bash
 cd /etc/apt/sources.list.d
 sudo rm bad-repo.list
 ```

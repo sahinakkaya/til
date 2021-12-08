@@ -1,4 +1,4 @@
-```
+```bash
 psql dbname username
 
 # example

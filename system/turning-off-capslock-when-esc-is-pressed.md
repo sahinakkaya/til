@@ -3,7 +3,7 @@ When my Ctrl key broken, I remapped Capslock to Ctrl as it was the most useless 
 I am a vim user and I don't use Capslock other than typing some constant variable names or SQL syntax etc. They are all happening in vim, specifically, in insert mode. Whenever I switch to normal mode, I want my Capslock to be off. I sometimes forget and instead of moving down with `j`, I find myself `J`oining lines. This happened more than 3 times so it is time to do something. 
 
 I could solve this problem in keyboard level because I have a programmable keyboard. I didn't want to this because sometimes I use my laptop's keyboard and I don't want them to behave differently. So I solved it on OS level. Here are the commands that I run in order to achieve this effect:
-```
+```bash
 mkdir -p ~/.xkb/keymap/
 mkdir -p ~/.xkb/symbols/
 vim ~/.xkb/symbols/mysymbols

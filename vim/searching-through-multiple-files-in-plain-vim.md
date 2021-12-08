@@ -1,6 +1,6 @@
 You can search through multiple files using `vimgrep` command.
 
-```
+```vim
 # search for string all python files in the current dir
 :vimgrep string *.py
 # search for string all python files in the current dir and subdir of the current dir

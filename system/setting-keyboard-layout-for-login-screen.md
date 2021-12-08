@@ -1,6 +1,6 @@
 Recently, I switched to dvorak layout and I am using it everywhere to get used to it. This was the command that worked everywhere (including the login screen):
 
-```
+```bash
 localectl --no-convert set-x11-keymap us pc105 dvp caps:ctrl_modifier
 ```
 

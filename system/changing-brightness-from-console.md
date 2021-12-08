@@ -5,13 +5,13 @@ Read [this](https://wiki.archlinux.org/title/backlight) and you are done :D
 Here is the tl;dr part.
 
 Run `ls /sys/class/backlight/` to see which graphics card is managing your backlight. I'm assuming you get an ouput like `intel_backlight`. Then run this:
-```
+```bash
 ls /sys/class/backlight/intel_backlight
 actual_brightness bl_power brightness device/
 max_brightness power/ scale subsystem/ type uevent
 ```
 Read the `max_brightness` value and then set your brightness to something smaller than that value:
-```
+```bash
 cat /sys/class/backlight/intel_backlight/max_brightness
 echo 100 > /sys/class/backlight/intel_backlight/brightness
 ```
@@ -23,7 +23,7 @@ RUN+="/bin/chgrp video /sys/class/backlight/intel_backlight/brightness"
 RUN+="/bin/chmod g+w /sys/class/backlight/intel_backlight/brightness"
 ```
 and add yourself to the `video` group. 
-```
+```bash
 sudo usermod -aG video $USER
 ```
 

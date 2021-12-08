@@ -1,6 +1,6 @@
-I have lots of images of a scene from sunrise to sunset and my wallpaper is automaticatilly set to one of them based on the hour of the day. But you know what? I LOVE customizing my machine and I WANT MORE! I want the transition to be smooth af. To make this possible I need to generate images. And here is the result of literally 5 minutes of google search:
+I have lots of images of a scene from sunrise to sunset and my wallpaper is automatically set to one of them based on the hour of the day. But you know what? I LOVE customizing my machine and I WANT MORE! I want the transition to be smooth af. To make this possible I need to generate images. And here is the result of literally 5 minutes of google search:
 
-```
+```bash
 convert A.jpg B.jpg -morph 10 out.jpg
 ```
 

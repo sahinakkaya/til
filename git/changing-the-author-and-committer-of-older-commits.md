@@ -1,7 +1,7 @@
-You can change author of your commits to anyone. Let's make all the commit's of the current repository Torvalds :D Luckily we know his email address so this will be very easy. Just run:
-```
+You can change author of your commits to anyone. Let's make all the commits of the current repository Torvalds's :D Luckily we know his email address so this will be very easy. Just run:
+```bash
 git filter-branch --env-filter '
-OLD_EMAIL="akkayas17@itu.edu.tr"
+OLD_EMAIL="old_email@domain.com"
 CORRECT_NAME="Linus Torvals"
 CORRECT_EMAIL="torvalds@linux-foundation.org"
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]

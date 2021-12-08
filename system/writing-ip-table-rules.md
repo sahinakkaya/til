@@ -1,5 +1,5 @@
 Today I wanted to ssh into my desktop from my laptop. They were both connected to my phone. Laptop was connected via Wi-Fi and the desktop was connected via USB tethering. Since they are not connected in the same way, they were on different networks and it was not possible to ssh into the other computer. I searched about the problem and found [this article](https://www.systutorials.com/port-forwarding-using-iptables/). Since my phone was rooted, I could run any command I want. The final set of commands which allowed me to ssh between each computers were:
-```
+```bash
 # from laptop to desktop
 iptables -t nat -A POSTROUTING ! -d 192.168.43.0/24 -o rndis0 -j MASQUERADE
 iptables -A PREROUTING -t nat -i swlan0 -p tcp --dport 22 -j DNAT --to 192.168.42.17:22
