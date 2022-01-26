@@ -1,0 +1,4 @@
+You can use `--unset` flag to unset your config variable.
+git config --local --unset user.name
+git config --global --unset user.name
+
