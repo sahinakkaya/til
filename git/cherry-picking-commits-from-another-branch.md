@@ -8,6 +8,6 @@ git cherry-pick <sha>
 git cherry-pick <sha> -n
 git cherry-pick <sha> --no-commit
 
-# pick all the commits from A to B
-git cherry-pick A^..B
+# pick all the commits from A to B (A is older than B, remove caret (^) if you don't want to include A)
+git cherry-pick "A^..B"
 ```
